@@ -57,9 +57,20 @@ rotate(45, rectangle(100, 20, "solid", "red"))
 a5 = regular-polygon(115, 8, "solid", "red")
 a6 = regular-polygon(120, 8, "solid", "white")
 a7 = text("STOP", 100, "white")
+over = overlay(a5, a6)
+overlay-align("center", "middle", a7, over)
 
-#over = overlay(a5, a6)
+#exercise 5:
+a9 = circle(100, "solid", "red")
+a10 = circle(115, "solid", "orange")
+a11 = circle(120, "solid", "yellow")
+a12 = circle(125, "solid", "green")
+a13 = circle(130, "solid", "cyan")
 
-#overlay(a7, over)
+overlay1 = overlay(a9, a10)
+
+overlay1
+
+
 
 
