@@ -43,10 +43,11 @@ string-to-upper("hello from cs2000!")
 #exercise 2
 #Create a blue circle and a yellow rectangle, then overlay them so the circle appears on top. Stack a green rectangle above a purple rectangle using above.
 a1 = circle(30, "solid", "blue")
-a2 = rectangle(40, 20, "solid", "yellow")
+a2 = rectangle(90, 20, "solid", "yellow")
 a3 = rectangle(40, 20, "solid", "purple")
+az = rectangle(40, 20, "solid", "green")
 overlay(a1, a2)
-above(a2, a3)
+above(az, a3)
 
 #exercise 3: red rectangle that is 100 wide by 20 tall in two different ways
 a4 = rectangle(100, 20, "solid", "red")
@@ -63,13 +64,18 @@ overlay-align("center", "middle", a7, over)
 #exercise 5:
 a9 = circle(100, "solid", "red")
 a10 = circle(115, "solid", "orange")
-a11 = circle(120, "solid", "yellow")
-a12 = circle(125, "solid", "green")
-a13 = circle(130, "solid", "cyan")
+a11 = circle(125, "solid", "yellow")
+a12 = circle(135, "solid", "green")
+a13 = circle(145, "solid", "cyan")
+a14 = circle(155, "solid", "blue")
 
 overlay1 = overlay(a9, a10)
+overlay2 = overlay(overlay1, a11)
+overlay3 = overlay(overlay2, a12)
+overlay4 = overlay(overlay3, a13)
+overlay5 = overlay(overlay4, a14)
 
-overlay1
+overlay5
 
 
 
