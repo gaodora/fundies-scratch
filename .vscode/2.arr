@@ -4,6 +4,7 @@ use context starter2024
 
 "hello world"
 
+#multi line print
 ```
 Hello 
 World
@@ -12,12 +13,14 @@ World
 
 "josh" + " eats apples"
 
+#name and printing them and other stuff
 s = "barry "
 n = 7
 print(s)
 string-length(s)
 string-repeat(s, n)
 
+#circles 
 i1 = circle(30, "solid", "blue")
 i2 = rectangle(40, 20, "solid", "green")
 i3 = triangle(50, "outline", "red")
@@ -25,4 +28,27 @@ overlay(i1,i2)
 above(i1,i2)
 below(i1,i2)
 
+
+
+"this begins class exercise"
+""
+#exercise 1
 String_ex = "hello cs2000!"
+string-to-upper(String_ex)
+
+#variation of upper case 
+string-to-upper("hello from cs2000!")
+
+
+#exercise 2
+#Create a blue circle and a yellow rectangle, then overlay them so the circle appears on top. Stack a green rectangle above a purple rectangle using above.
+a1 = circle(30, "solid", "blue")
+a2 = rectangle(40, 20, "solid", "yellow")
+a3 = rectangle(40, 20, "solid", "purple")
+overlay(a1, a2)
+above(a2, a3)
+
+#exercise 3: red rectangle that is 100 wide by 20 tall in two different ways
+
+
+
