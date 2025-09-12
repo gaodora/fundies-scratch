@@ -49,6 +49,17 @@ overlay(a1, a2)
 above(a2, a3)
 
 #exercise 3: red rectangle that is 100 wide by 20 tall in two different ways
+a4 = rectangle(100, 20, "solid", "red")
+rotate(100, a4)
+rotate(45, rectangle(100, 20, "solid", "red"))
 
+#exercise 4: Create a Stop sign. text, regular-polygon, and other functions you've already seen may be helpful.
+a5 = regular-polygon(115, 8, "solid", "red")
+a6 = regular-polygon(120, 8, "solid", "white")
+a7 = text("STOP", 100, "white")
+
+#over = overlay(a5, a6)
+
+#overlay(a7, over)
 
 
