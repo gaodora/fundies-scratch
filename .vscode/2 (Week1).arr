@@ -80,20 +80,3 @@ overlay5 = overlay(overlay4, a14)
 
 overlay5
 
-##########################################
-#WEEK 2, CLASS 1
-
-#define orange triangle
-orange_triangle = triangle(35, "solid", "orange")
-orange_triangle #display orange triangle
-
-#define length, color for square
-leng = 80
-colr = "pink"
-
-def_sq = square(leng, "solid", colr)
-def_sq #display square
-
-
-#define square w/o leng and colr
-def_sq2 = square(80, "solid", "pink")
