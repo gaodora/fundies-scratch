@@ -12,6 +12,7 @@ World
 ```
 
 "josh" + " eats apples"
+'hello'
 
 #name and printing them and other stuff
 s = "barry "
