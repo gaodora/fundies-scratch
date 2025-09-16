@@ -57,15 +57,29 @@ rectangle(50, 20, "solid", "black")
 circle(30, "solid" , "red")
 
 #5. Create a Flag or Shield
+#FLag: creates the shapes that will form the flag
 base = rectangle(200, 140, "solid", "white")
-red1 = rectangle(200, 40, "solid", "red")
-red2 = rectangle(200, 40, "solid", "red")
-ca = circle(100, "solid", "red")
-cb = circle(115, "solid", "orange")
+red1 = rectangle(200, 55, "solid", "red")
+red2 = rectangle(200, 55, "solid", "red")
+ca = circle(40, "solid", "red")
+cb = circle(55, "solid", "white")
 
+#overlays that will make the form of the flag
 overcircle = overlay(ca, cb)
 over1 = overlay-align("center", "top", red1, base)
 over2 = overlay-align("center", "bottom", red2, over1)
-over3 = 
+over3 = overlay-align("center", "middle", overcircle, over2)
+#displays flag
+over3
 
+#sheild variation
+base_sheild = square(100, "solid", "blue")
+squ = square(70, "solid", "cyan")
+circ = circle(40, "solid", "cyan")
 
+#rotate sheild
+rotated = rotate(45, base_sheild)
+sheild1 = overlay-align("center", "middle", squ, rotated)
+sheild2 = overlay-align("center", "middle", circ, sheild1)
+#display sheild
+sheild2
