@@ -1,6 +1,6 @@
 use context starter2024
 
-# 1. T-Shirt Shop
+#1. T-Shirt Shop
 #expression for 5 identical T-shirts assuming that each shirt itself will be charged £12 and have a setup fee of £3
 5 * (12 - 3)
 #expression for 7 identical T-shirts assuming that each shirt itself will be charged £12 and have a setup fee of £3
@@ -17,7 +17,7 @@ p * 0.10
 #if you forget parentheses around (width + height) you will get an error because pyret doesn't follow the order of operations for multiplication and division
 
 
-# 2. String Surprises
+#2. String Surprises
 #missing one of the quotes and fix the error, when a quote is missing you will get an error 
 "Designs for everyone!"
 
@@ -55,3 +55,17 @@ three
 rectangle(50, 20, "solid", "black")
 #solid was not in quotes, resulting in an error
 circle(30, "solid" , "red")
+
+#5. Create a Flag or Shield
+base = rectangle(200, 140, "solid", "white")
+red1 = rectangle(200, 40, "solid", "red")
+red2 = rectangle(200, 40, "solid", "red")
+ca = circle(100, "solid", "red")
+cb = circle(115, "solid", "orange")
+
+overcircle = overlay(ca, cb)
+over1 = overlay-align("center", "top", red1, base)
+over2 = overlay-align("center", "bottom", red2, over1)
+over3 = 
+
+
