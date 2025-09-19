@@ -35,6 +35,9 @@ overblack #display overblack
 
 
 
+
+
+
 ########################################
 #WEEK 2, CLASS 2
 
@@ -54,13 +57,18 @@ fun welcome(Name :: String) -> String:
   doc: "returns greeting addressed to given person" 
   "Welcome to class, " + Name
 end
-#ex of welcome function
+#ex of welcome function being used
 welcome("Jay")
 welcome("Anne")
+#check welcome
+check:
+  welcome("Max") is "Welcome to class, Max"
+  welcome("Franz") is "Welcome to class, Franz"
+end
 
 
-#function area 
 fun area(width, height):
+  doc: "returns area"
   width * height
 end
 #checks if following is true 
