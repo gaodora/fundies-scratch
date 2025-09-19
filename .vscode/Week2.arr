@@ -38,6 +38,7 @@ overblack #display overblack
 
 
 
+
 ########################################
 #WEEK 2, CLASS 2
 
@@ -50,6 +51,7 @@ end
 add-two-num(5, 8)
 add-two-num(2, 6)
 add-two-num(4, 5)
+
 
 
 #ex of function with type annotations and docstring
@@ -67,14 +69,57 @@ check:
 end
 
 
-fun area(width, height):
+
+#armenia flag to compare for checks
+armenia = frame(
+  above(rectangle(120, 30, "solid", "red"),
+    above(rectangle(120, 30, "solid", "blue"),
+      rectangle(120, 30, "solid", "orange"))))
+#austria flag to compare for checks
+austria = frame(
+  above(rectangle(120, 30, "solid", "red"),
+    above(rectangle(120, 30, "solid", "white"),
+      rectangle(120, 30, "solid", "red"))))
+
+#create functions from expressions
+fun three-stripe-flag(top :: String, middle :: String, bot :: String) -> Image:
+  doc: "returns flag with 3 stripes"
+  frame(
+    above(rectangle(120, 30, "solid", top),
+      above(rectangle(120, 30, "solid", middle),
+        rectangle(120, 30, "solid", bot))))
+end
+
+#checks for three stripe flag
+check:
+  three-stripe-flag("red", "blue", "orange") is armenia
+  three-stripe-flag("red", "white", "red") is austria
+end
+
+
+
+#--------------------Class 2.2 Exercises
+
+#Writing Good Doc Strings
+fun area(width, height :: NumPositive) -> Exactnum:
   doc: "returns area"
   width * height
 end
-#checks if following is true 
+#checks if following returns true 
 check:
   area(3, 20) is 3 * 20
   area(4, 50) is 4 * 50
   area(5, 4) is 5 * 4 
-  #if you did 'area(5, 4) is 5 * 3' or 'area(5, 3) is 5 * 4' it will show that of the three only two passed with looking into details showing why either failed to be true
 end
+#if you did 'area(5, 4) is 5 * 3' or 'area(5, 3) is 5 * 4' it will show that of the three only two passed with looking into details showing why either failed to be true
+
+
+#Function Design Process - cost of shirt
+fun cost(num_shir, messag): 
+  doc: "finds cost of shirt"
+  (num_shir * 5) + (string-length(messag) * 0.1)
+end
+#cost for 4 shirts 
+cost(4, "Go Team!")
+#cost for 7 shirts 
+cost(7, "Hello World")
