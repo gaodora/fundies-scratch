@@ -35,7 +35,23 @@ overblack #display overblack
 
 
 
+########################################
 #WEEK 2, CLASS 2
-fun welcome(Name):
+
+#teach ex
+fun add-two-num(first-num, second-num):
+  first-num + second-num
+end
+#ex num for adding function
+add-two-num(5, 8)
+add-two-num(2, 6)
+add-two-num(4, 5)
+
+#ex of function with type annotations and docstring
+fun welcome(Name :: String) -> String:
+  doc: "returns greeting addressed to given person" 
   "Welcome to class, " + Name
 end
+#ex of welcome function
+welcome("Jay")
+welcome("Anne")
