@@ -39,13 +39,15 @@ overblack #display overblack
 #WEEK 2, CLASS 2
 
 #teach ex
-fun add-two-num(first-num, second-num):
+fun add-two-num(first-num, second-num): 
+  doc: "returns the sum of two numbers"
   first-num + second-num
 end
 #ex num for adding function
 add-two-num(5, 8)
 add-two-num(2, 6)
 add-two-num(4, 5)
+
 
 #ex of function with type annotations and docstring
 fun welcome(Name :: String) -> String:
@@ -55,3 +57,16 @@ end
 #ex of welcome function
 welcome("Jay")
 welcome("Anne")
+
+
+#function area 
+fun area(width, height):
+  width * height
+end
+#checks if following is true 
+check:
+  area(3, 20) is 3 * 20
+  area(4, 50) is 4 * 50
+  area(5, 4) is 5 * 4 
+  #if you did 'area(5, 4) is 5 * 3' or 'area(5, 3) is 5 * 4' it will show that of the three only two passed with looking into details showing why either failed to be true
+end
